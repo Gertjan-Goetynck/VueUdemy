@@ -1,7 +1,7 @@
 new Vue({
-  el: '#app',
+  el: "#app",
   data: {
-    title: 'Hello world'
+    title: "Hello world"
   },
   methods: {
     changeTitle(event) {
