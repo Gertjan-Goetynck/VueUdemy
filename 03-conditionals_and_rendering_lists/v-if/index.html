@@ -8,7 +8,18 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <p v-if="!show">Can you see me?</p>
+      <p v-else>You can't see me</p>
+      <button @click="show =!show">Toggle</button>
+      <p v-if="option === 'A'">A</p>
+      <p v-else-if="option === 'B'">B</p>
+      <p v-else>Neither A or B</p>
+      <template v-if="show">
+        <h1>Template</h1>
+        <p>These are nested in a template</p>
+      </template>
+    </div>
     <script src="./main.js"></script>
   </body>
 </html>

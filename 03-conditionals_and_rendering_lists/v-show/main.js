@@ -1,6 +1,8 @@
 new Vue({
   el: "#app",
-  data: {},
+  data: {
+    show: true
+  },
   computed: {},
   methods: {}
 });
